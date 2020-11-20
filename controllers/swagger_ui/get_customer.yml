@@ -1,0 +1,44 @@
+Get a customer document by the customer document key
+---
+summary:  Retrieves customer document.
+tags:
+  - user
+consumes:
+  - application/json
+produces:
+  - application/json
+security:
+  - bearerAuth: []
+parameters:
+  - in: query
+    name: customerId
+    description: The customerId to retrieve customer document
+    schema:
+      type: integer
+
+definitions:
+  Response:
+    type: object
+    properties:
+      data:
+        type: object
+      message:
+        type: string
+      error:
+        type: object
+      authorized:
+        type: boolean
+
+responses:
+  200:
+    description: response object
+    schema:
+      $ref: '#/definitions/Response'
+  401:
+    description: response object
+    schema:
+      $ref: '#/definitions/Response'
+  500:
+    description: Error trying to creat user
+    schema:
+      $ref: '#/definitions/Response'

@@ -1,0 +1,44 @@
+Search for products
+---
+summary:  Searches for products
+tags:
+  - product
+description: Searches for products based on provided search term
+consumes:
+  - application/json
+produces:
+  - application/json
+parameters:
+  - in: query
+    name: product
+    description: the product to search for
+    schema:
+      type: string
+  - name: fuzziness
+    in: query
+    description: fuzziness in FTS search (keep < 2)
+    schema:
+      type: integer
+
+definitions:
+  Response:
+    type: object
+    properties:
+      data:
+        type: object
+      message:
+        type: string
+      error:
+        type: object
+      authorized:
+        type: boolean
+
+responses:
+  200:
+    description: response object
+    schema:
+      $ref: '#/definitions/Response'
+  500:
+    description: Error trying to creat user
+    schema:
+      $ref: '#/definitions/Response'

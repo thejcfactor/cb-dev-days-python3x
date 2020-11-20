@@ -1,0 +1,66 @@
+{
+    "doc":{
+        "type":"order",
+        "schema":"1.0.0",
+        "created": 1598949211000,
+        "createdBy": 0,
+        "modified": 1600810411000,
+        "modifiedBy": 0
+    },
+    "custId": 0,
+    "orderStatus": "shipped",
+    "orderDate":1598949211000,
+    "billingInfo":{
+        "address":{
+            "address": "1234 Main St",
+            "city": "Some City",
+            "country": "US",
+            "state": "TX",
+            "zipCode": "12345"
+        },
+        "name":""
+    },
+    "shippingInfo":{
+        "address":{
+            "address": "1234 Main St",
+            "city": "Some City",
+            "country": "US",
+            "state": "TX",
+            "zipCode": "12345"
+        },
+        "name": "",
+        "shippingMethod": "3 - Business Days"
+    },
+    "shippingTotal":7.99,
+    "tax":51.51,
+    "lineItems":[
+        {
+            "prodId": "00402f25-c058-41d6-8a7c-9371c68a7503",
+            "dispName":"Unbranded Soft Car",
+            "shortDescr":"Consequatur reiciendis voluptatem ad aspernatur. Dolorem facere ut. Necessitatibus omnis sit illo vel at sint et sequi odit. Natus minima temporibus sed. Quidem et numquam nobis omnis quia accusamus.",
+            "image":"http://lorempixel.com/640/480/nature",
+            "price":142.11,
+            "qty":1,
+            "subTotal":142.11
+        },
+        {
+            "prodId": "02403ee5-65c6-4374-bcf5-086f85a3c96b",
+            "dispName":"Rustic Cotton Tuna",
+            "shortDescr":"Rem quos aut architecto. Deleniti sunt rerum eius hic quia omnis. Dolor et maiores vero ex a quia aut. Quos enim voluptas qui nobis a est est repellat. Enim nulla quis explicabo est ex ex vel quidem. Est in quibusdam aut ut.",
+            "image":"http://lorempixel.com/640/480/abstract",
+            "price":121.16,
+            "qty":2,
+            "subTotal":242.32
+        },
+        {
+            "prodId": "02c48819-8975-4ab6-9c1e-03b8817cb39b",
+            "dispName":"Fantastic Cotton Car",
+            "shortDescr":"Nam fugit repellat possimus quidem dolor. Ipsa molestiae quo voluptatem dignissimos sunt voluptas. Dolor sed est eos numquam nihil reiciendis sint. Aliquid ducimus modi sed tempore numquam adipisci aliquid. Illum expedita nesciunt.",
+            "image":"http://lorempixel.com/640/480/technics",
+            "price":79.98,
+            "qty":3,
+            "subTotal":239.94
+        }
+    ],
+    "grandTotal":683.87
+}

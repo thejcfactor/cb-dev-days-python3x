@@ -1,0 +1,48 @@
+Delete an order
+---
+summary:  Deletes customer order.
+tags:
+  - user
+consumes:
+  - application/json
+produces:
+  - application/json
+security:
+  - bearerAuth: []
+parameters:
+  - in: query
+    name: orderId
+    description: The orderId of order document to delete
+    schema:
+      type: integer
+
+definitions:
+  Response:
+    type: object
+    properties:
+      data:
+        type: object
+      message:
+        type: string
+      error:
+        type: object
+      authorized:
+        type: boolean
+
+responses:
+  200:
+    description: Success
+    schema:
+      $ref: '#/definitions/Response'
+  400:
+    description: Bad request from client
+    schema:
+      $ref: '#/definitions/Response'
+  401:
+    description: Unauthorized
+    schema:
+      $ref: '#/definitions/Response'
+  500:
+    description: Error trying to creat user
+    schema:
+      $ref: '#/definitions/Response'
